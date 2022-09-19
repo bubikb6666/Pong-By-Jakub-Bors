@@ -8,8 +8,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*Setting Background Image*/
-    background: url("https://tiny.pl/wgvq5"), center;
+    /*Setting Background Color*/
+    background: #6d6d77, center;
     background-size: cover;
 }
 
