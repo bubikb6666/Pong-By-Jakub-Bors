@@ -9,8 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     /*Setting Background Color*/
-    background: #6d6d77, center;
-    background-size: cover;
+    background-color: #6d6d77;
 }
 
 #wrapper canvas {
