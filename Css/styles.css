@@ -9,12 +9,10 @@ body {
     align-items: center;
     justify-content: center;
     /*Setting Background Color*/
-    background-color: #6d6d77;
+    background-color: #000;
 }
 
 #wrapper canvas {
-    /*Making Canvas Transparent*/
-    background-color: rgba(0, 0, 0, 0.4);
     /*Making Canvas Have Rounded Edges*/
     border-radius: 8px;
     /*Adding White Border To Canvas*/
