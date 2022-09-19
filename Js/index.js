@@ -7,17 +7,18 @@ const ctx = canvas.getContext('2d')
 canvas.width = 1000;
 canvas.height = 500;
 
-// Creating A Variables That Are A Size Of Canvas 
-const cw = canvas.width;
-const ch = canvas.height;
+// Creating Some Variables
+const cw = canvas.width,
+ch = canvas.height,
+ballSize = 20;
+let ballX = cw / 2 - ballSize / 2,
+ballY = ch / 2 - ballSize / 2;
 
-// Creating A Variables For Ball
-const ballSize = 20;
-let ballX = cw / 2 - ballSize / 2;
-let ballY = ch / 2 - ballSize / 2;
+const paddelHeight = 100,
+paddelWidth = 10,
 
-const paddelHeight = 100;
-const paddelWidth = 10;
+playerX = 70;
+
 
 
 // Creating A Ball Function That Draws Ball
