@@ -1,17 +1,24 @@
 body {
+    /*Resets margin and padding*/
     margin: 0;
     padding: 0;
+    /*Setting height to 100%*/
     height: 100vh;
+    /*Centering a Game Container*/
     display: flex;
     align-items: center;
     justify-content: center;
+    /*Setting Background Image*/
     background: url("https://tiny.pl/wgvq5"), center;
     background-size: cover;
 }
 
 #wrapper canvas {
+    /*Making Canvas Transparent*/
     background-color: rgba(0, 0, 0, 0.4);
+    /*Making Canvas Have Rounded Edges*/
     border-radius: 8px;
+    /*Adding White Border To Canvas*/
     border: 2px solid #ffffff;
 }
 
