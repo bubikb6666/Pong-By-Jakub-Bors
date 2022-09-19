@@ -7,16 +7,20 @@ const ctx = canvas.getContext('2d')
 canvas.width = 1000;
 canvas.height = 500;
 
-// Making A Variables That Are A Size Of Canvas 
+// Creating A Variables That Are A Size Of Canvas 
 const cw = canvas.width;
 const ch = canvas.height;
 
-// Making A Variables For Ball
+// Creating A Variables For Ball
 const ballSize = 20;
 let ballX = cw / 2 - ballSize / 2;
 let ballY = ch / 2 - ballSize / 2;
 
-// Making A Ball Function That Draws Ball
+const paddelHeight = 100;
+const paddelWidth = 10;
+
+
+// Creating A Ball Function That Draws Ball
 function ball() {
     // Changing Color To White
     ctx.fillStyle = "#ffffff";
