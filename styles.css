@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://tiny.pl/wgvq5"), center;
+    background-size: cover;
+}
+
+#wrapper canvas {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+}
+
