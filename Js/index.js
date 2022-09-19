@@ -1,23 +1,23 @@
-// Getting Canvas Object
 const canvas = document.querySelector('canvas');
-// Getting From Canvas Object 2D Context
-const ctx = canvas.getContext('2d')
+const ctx = canvas.getContext('2d');
 
-// Changing A Size Of Canvas
 canvas.width = 1000;
 canvas.height = 500;
 
-// Creating Some Variables
-const cw = canvas.width,
-ch = canvas.height,
-ballSize = 20;
-let ballX = cw / 2 - ballSize / 2,
-ballY = ch / 2 - ballSize / 2;
+const cw = canvas.width;
+const ch = canvas.height;
+const ballSize = 20;
+let ballX = cw / 2 - ballSize / 2;
+let ballY = ch / 2 - ballSize / 2;
 
-const paddelHeight = 100,
-paddelWidth = 10,
+const paddelHeight = 100;
+const paddelWidth = 10;
 
-playerX = 70;
+const playerX = 70;
+const aiX = 910;
+
+let playerY = 200;
+let aiY = 200;
 
 
 
