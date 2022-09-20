@@ -22,6 +22,9 @@ let aiY = 200;
 const lineWidth = 6;
 const lineHeight = 16;
 
+let ballSpeedX = 1
+let ballSpeedY = 1;
+
 function player() {
     ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
     ctx.fillStyle = '#7FFF00';
@@ -44,6 +47,9 @@ function table() {
     for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
         ctx.fillRect(cw / 2 - lineWidth / 2, linePosition, lineWidth, lineHeight)
+
+        ballX = ballX + ballSpeedX;
+        ballY = ballY + ballSpeedY;
     }
 }
 
