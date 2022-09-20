@@ -37,5 +37,6 @@ function ball() {
     ctx.fillRect(ballX, ballY, ballSize, ballSize);
 }
 
-ball()
-player()
+ball();
+player();
+AI();
