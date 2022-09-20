@@ -20,14 +20,9 @@ let playerY = 200;
 let aiY = 200;
 
 
-
-// Creating A Ball Function That Draws Ball
 function ball() {
-    // Changing Color To White
     ctx.fillStyle = "#ffffff";
-    // Drawing A Ball
     ctx.fillRect(ballX, ballY, ballSize, ballSize);
 }
 
-// Executing Ball Function
 ball()
