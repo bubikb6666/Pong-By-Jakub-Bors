@@ -41,7 +41,7 @@ function ball() {
 }
 
 function table() {
-    for (let linePosition = 20; linePosition < 500; linePosition +=30) {
+    for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
         ctx.fillRect(cw / 2 - lineWidth / 2, linePosition, lineWidth, lineHeight)
     }
