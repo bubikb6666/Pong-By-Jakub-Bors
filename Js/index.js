@@ -19,6 +19,9 @@ const aiX = 910;
 let playerY = 200;
 let aiY = 200;
 
+function player() {
+    
+}
 
 function ball() {
     ctx.fillStyle = "#ffffff";
