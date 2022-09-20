@@ -36,8 +36,8 @@ function ai() {
 }
 
 function ball() {
-    ballX = ballX + ballSpeedX;
-    ballY = ballY + ballSpeedY;
+    ballX += ballSpeedX;
+    ballY += ballSpeedY;
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(ballX, ballY, ballSize, ballSize);
 }
@@ -49,10 +49,14 @@ function table() {
     }
 }
 
-table();
-ctx.clearRect(ballX, ballY, ballSize, ballSize);
-ball();
-ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
-player();
-ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
-ai();
+function game() {
+    table();
+    ctx.clearRect(ballX, ballY, ballSize, ballSize);
+    ball();
+    ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
+    player();
+    ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
+    ai();
+}
+
+setInterval(game, 60)
