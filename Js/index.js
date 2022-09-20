@@ -11,7 +11,7 @@ let ballX = cw / 2 - ballSize / 2;
 let ballY = ch / 2 - ballSize / 2;
 
 const paddelHeight = 100;
-const paddelWidth = 10;
+const paddelWidth = 20;
 
 const playerX = 70;
 const aiX = 910;
