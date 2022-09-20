@@ -59,4 +59,4 @@ function game() {
     ai();
 }
 
-setInterval(game, 60)
+setInterval(game, 1000 / 60);
