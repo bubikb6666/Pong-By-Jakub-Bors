@@ -38,3 +38,4 @@ function ball() {
 }
 
 ball()
+player()
