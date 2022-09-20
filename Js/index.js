@@ -20,10 +20,19 @@ let playerY = 200;
 let aiY = 200;
 
 function player() {
-    
+    ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
+    ctx.fillStyle = '#7FFF00';
+    ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
+}
+
+function AI() {
+    ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
+    ctx.fillStyle = 'yellow';
+    ctx.fillRect(aiX, aiY, paddelWidth, paddelHeight);
 }
 
 function ball() {
+    ctx.clearRect(ballX, ballY, ballSize, ballSize);
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(ballX, ballY, ballSize, ballSize);
 }
