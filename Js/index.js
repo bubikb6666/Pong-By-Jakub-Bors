@@ -36,11 +36,10 @@ function ai() {
 }
 
 function ball() {
-    ctx.fillStyle = "#ffffff";
-    ctx.fillRect(ballX, ballY, ballSize, ballSize);
-
     ballX = ballX + ballSpeedX;
     ballY = ballY + ballSpeedY;
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(ballX, ballY, ballSize, ballSize);
 }
 
 function table() {
