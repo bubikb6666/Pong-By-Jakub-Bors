@@ -25,7 +25,7 @@ function player() {
     ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
 }
 
-function AI() {
+function ai() {
     ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
     ctx.fillStyle = 'yellow';
     ctx.fillRect(aiX, aiY, paddelWidth, paddelHeight);
@@ -39,4 +39,4 @@ function ball() {
 
 ball();
 player();
-AI();
+ai();
