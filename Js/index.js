@@ -41,15 +41,15 @@ function ball() {
     ctx.clearRect(ballX, ballY, ballSize, ballSize);
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(ballX, ballY, ballSize, ballSize);
+
+    ballX = ballX + ballSpeedX;
+    ballY = ballY + ballSpeedY;
 }
 
 function table() {
     for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
         ctx.fillRect(cw / 2 - lineWidth / 2, linePosition, lineWidth, lineHeight)
-
-        ballX = ballX + ballSpeedX;
-        ballY = ballY + ballSpeedY;
     }
 }
 
