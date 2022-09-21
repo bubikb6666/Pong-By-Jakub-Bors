@@ -54,8 +54,6 @@ function playerPosition(e) {
     playerY = e.clientY - canvas.offsetTop;
 }
 
-canvas.addEventListener("mousemove", playerPosition);
-
 function table() {
     for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
@@ -68,6 +66,7 @@ function game() {
     ctx.clearRect(ballX, ballY, ballSize, ballSize);
     ball();
     ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
+    canvas.addEventListener("mousemove", playerPosition);
     player();
     ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
     ai();
