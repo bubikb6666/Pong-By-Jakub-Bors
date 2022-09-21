@@ -27,7 +27,7 @@ let ballSpeedY = 4;
 
 function player(e) {
     ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
-    playerY = e.clientY - canvas.offsetTop;
+    playerY = e.clientY - canvas.offsetTop - paddelHeight;
     ctx.fillStyle = '#7FFF00';
     ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
 }
