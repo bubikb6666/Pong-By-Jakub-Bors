@@ -26,17 +26,20 @@ let ballSpeedX = 4;
 let ballSpeedY = 4;
 
 function player(e) {
+    ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
     playerY = e.clientY - canvas.offsetTop;
     ctx.fillStyle = '#7FFF00';
     ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
 }
 
 function ai() {
+    ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
     ctx.fillStyle = 'yellow';
     ctx.fillRect(aiX, aiY, paddelWidth, paddelHeight);
 }
 
 function ball() {
+    ctx.clearRect(ballX, ballY, ballSize, ballSize);
     ballX += ballSpeedX;
     ballY += ballSpeedY;
     ctx.fillStyle = "#ffffff";
@@ -60,11 +63,8 @@ function table() {
 
 function game() {
     table();
-    ctx.clearRect(ballX, ballY, ballSize, ballSize);
     ball();
-    ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
     canvas.addEventListener("mousemove", player);
-    ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
     ai();
 }
 
