@@ -25,7 +25,8 @@ const lineHeight = 16;
 let ballSpeedX = 4;
 let ballSpeedY = 4;
 
-function player() {
+function player(e) {
+    playerY = e.clientY - canvas.offsetTop;
     ctx.fillStyle = '#7FFF00';
     ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
 }
@@ -50,10 +51,6 @@ function ball() {
     }
 }
 
-function playerPosition(e) {
-    playerY = e.clientY - canvas.offsetTop;
-}
-
 function table() {
     for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
@@ -66,8 +63,7 @@ function game() {
     ctx.clearRect(ballX, ballY, ballSize, ballSize);
     ball();
     ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
-    canvas.addEventListener("mousemove", playerPosition);
-    player();
+    canvas.addEventListener("mousemove", player);
     ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
     ai();
 }
