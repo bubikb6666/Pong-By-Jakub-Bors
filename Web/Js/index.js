@@ -40,6 +40,14 @@ function ball() {
     ballY += ballSpeedY;
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(ballX, ballY, ballSize, ballSize);
+
+    if (ballY <= 0 || ballY + ballSize >= ch) {
+        ballSpeedY = -ballSpeedY;
+    }
+
+    if (ballX <= 0 || ballX + ballSize >= cw) {
+        ballSpeedX = -ballSpeedX;
+    }
 }
 
 function table() {
