@@ -50,6 +50,12 @@ function ball() {
     }
 }
 
+function playerPosition(e) {
+    playerY = e.clientY - canvas.offsetTop;
+}
+
+canvas.addEventListener("mousemove", playerPosition);
+
 function table() {
     for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
