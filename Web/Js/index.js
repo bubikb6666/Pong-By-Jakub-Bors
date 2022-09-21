@@ -31,6 +31,7 @@ function player(e) {
     if (playerY >= ch - paddelHeight) {
         playerY = ch - paddelHeight;
     }
+    
     if (playerY <= 0) {
         playerY = 0;
     }
