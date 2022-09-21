@@ -22,8 +22,8 @@ let aiY = 200;
 const lineWidth = 6;
 const lineHeight = 16;
 
-let ballSpeedX = 2;
-let ballSpeedY = 2;
+let ballSpeedX = 4;
+let ballSpeedY = 4;
 
 function player() {
     ctx.fillStyle = '#7FFF00';
