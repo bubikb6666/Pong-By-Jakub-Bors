@@ -71,7 +71,7 @@ function table() {
 }
 
 function aiPosition() {
-    aiY = ballY
+    aiY = ballY;
 }
 
 canvas.addEventListener("mousemove", player);
