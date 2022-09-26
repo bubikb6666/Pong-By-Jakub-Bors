@@ -56,12 +56,10 @@ function ball() {
 
     if (ballY <= 0 || ballY + ballSize >= ch) {
         ballSpeedY = -ballSpeedY;
-        speedUp();
     }
 
     if (ballX <= 0 || ballX + ballSize >= cw) {
         ballSpeedX = -ballSpeedX;
-        speedUp();
     }
 }
 
@@ -69,20 +67,6 @@ function table() {
     for (let linePosition = 20; linePosition < ch; linePosition +=30) {
         ctx.fillStyle = "gray";
         ctx.fillRect(cw / 2 - lineWidth / 2, linePosition, lineWidth, lineHeight)
-    }
-}
-
-function speedUp() {
-    if (ballSpeedX > 0 && ballSpeedX < 16) {
-        ballSpeedX += 1;
-    } else if (ballSpeedX < 0 && ballSpeedX > -16) {
-        ballSpeedX -= 1;
-    }
-
-    if (ballSpeedY > 0 && ballSpeedY < 16) {
-        ballSpeedY += 1;
-    } else if (ballSpeedY < 0 && ballSpeedY > -16) {
-        ballSpeedY -= 1;
     }
 }
 
