@@ -36,13 +36,13 @@ function player(e) {
         playerY = 0;
     }
 
-    aiY = playerY;
     ctx.fillStyle = '#7FFF00';
     ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
 }
 
 function ai() {
     ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
+    aiY = playerY;
     ctx.fillStyle = 'yellow';
     ctx.fillRect(aiX, aiY, paddelWidth, paddelHeight);
 }
