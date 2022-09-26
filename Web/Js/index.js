@@ -22,8 +22,8 @@ let aiY = 200;
 const lineWidth = 6;
 const lineHeight = 16;
 
-let ballSpeedX = 4;
-let ballSpeedY = 4;
+let ballSpeedX = 16;
+let ballSpeedY = 16;
 
 function player(e) {
     ctx.clearRect(playerX, playerY, paddelWidth, paddelHeight);
