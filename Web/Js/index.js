@@ -42,7 +42,6 @@ function player(e) {
 
 function ai() {
     ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
-    aiY = playerY;
     ctx.fillStyle = 'yellow';
     ctx.fillRect(aiX, aiY, paddelWidth, paddelHeight);
 }
@@ -86,12 +85,17 @@ function speedUp() {
     }
 }
 
+function aiPosition() {
+    aiY = ballY + ballSize / 2;
+}
+
 canvas.addEventListener("mousemove", player);
 
 function game() {
     table();
     ball();
     ai();
+    aiPosition();
 }
 
 setInterval(game, 1000 / 60);
