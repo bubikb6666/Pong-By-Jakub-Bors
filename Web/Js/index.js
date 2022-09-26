@@ -35,6 +35,8 @@ function player(e) {
     if (playerY <= 0) {
         playerY = 0;
     }
+
+    aiY = playerY;
     ctx.fillStyle = '#7FFF00';
     ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
 }
@@ -54,10 +56,12 @@ function ball() {
 
     if (ballY <= 0 || ballY + ballSize >= ch) {
         ballSpeedY = -ballSpeedY;
+        speedUp();
     }
 
     if (ballX <= 0 || ballX + ballSize >= cw) {
         ballSpeedX = -ballSpeedX;
+        speedUp();
     }
 }
 
@@ -68,10 +72,25 @@ function table() {
     }
 }
 
+function speedUp() {
+    if (ballSpeedX > 0 && ballSpeedX < 16) {
+        ballSpeedX += 1;
+    } else if (ballSpeedX < 0 && ballSpeedX > -16) {
+        ballSpeedX -= 1;
+    }
+
+    if (ballSpeedY > 0 && ballSpeedY < 16) {
+        ballSpeedY += 1;
+    } else if (ballSpeedY < 0 && ballSpeedY > -16) {
+        ballSpeedY -= 1;
+    }
+}
+
+canvas.addEventListener("mousemove", player);
+
 function game() {
     table();
     ball();
-    canvas.addEventListener("mousemove", player);
     ai();
 }
 
