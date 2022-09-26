@@ -87,7 +87,7 @@ function speedUp() {
 }
 
 function aiPosition() {
-    aiY = ballY + ballSize / 2;
+    aiY = ballY
 }
 
 canvas.addEventListener("mousemove", player);
