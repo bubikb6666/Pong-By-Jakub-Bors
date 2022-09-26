@@ -42,6 +42,7 @@ function player(e) {
 
 function ai() {
     ctx.clearRect(aiX, aiY, paddelWidth, paddelHeight);
+    aiPosition();
     ctx.fillStyle = 'yellow';
     ctx.fillRect(aiX, aiY, paddelWidth, paddelHeight);
 }
@@ -95,7 +96,6 @@ function game() {
     table();
     ball();
     ai();
-    aiPosition();
 }
 
 setInterval(game, 1000 / 60);
