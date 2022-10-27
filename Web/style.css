@@ -1,1 +1,4 @@
 
+body {margin: 0; padding: 0; background: url("https://tiny.pl/wgvq5"), center; background-size: cover;}
+#wrapper canvas {background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; border: 2px solid #ffffff;}
+#wrapper {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
